@@ -9,10 +9,30 @@ You can return the answer in any order.
 //using two pointers (a famous method of this famous problem)
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class TwoSum {
 
+    //One Pass method uses the HashMap
+    //Instead of checking all the possibilities, we can use HashMap and see if the current value i => target-i = k => if k is present in the map, then we return i and k.
+
+    public static int[] onePassMethod(int[] nums, int target){
+        HashMap<Integer, Integer> data = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+
+            if(data.containsKey(target-nums[i])){
+                return new int[] {data.get(target-nums[i]), i};
+            }
+
+            data.put(nums[i], i);
+        }
+        return new int[] {-1,-1};
+    }
+
+
     public static int[] twoPointers(int[] nums, int target){
+        //There is a problem witht this solution. this works fine for most cases except some cases in leetcode. So this is not the best for all the scenarios.
         int[] result = {-1,-1};
 
         int low= 0;

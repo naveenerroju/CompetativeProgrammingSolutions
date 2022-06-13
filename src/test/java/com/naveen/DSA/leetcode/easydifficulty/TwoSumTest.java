@@ -14,7 +14,7 @@ class TwoSumTest extends TwoSum {
         int target = 6;
         int[] expected = {1,2};
 
-        assertEquals(Arrays.toString(expected), Arrays.toString(twoPointers(arr, target)));
+        assertEquals(Arrays.toString(expected), Arrays.toString(onePassMethod(arr, target)));
     }
 
     @Test
@@ -23,7 +23,7 @@ class TwoSumTest extends TwoSum {
         int target = 9;
         int[] expected = {0,1};
 
-        assertEquals(Arrays.toString(expected), Arrays.toString(twoPointers(arr, target)));
+        assertEquals(Arrays.toString(expected), Arrays.toString(onePassMethod(arr, target)));
     }
 
     @Test
@@ -32,7 +32,7 @@ class TwoSumTest extends TwoSum {
         int target = 6;
         int[] expected = {0,1};
 
-        assertEquals(Arrays.toString(expected), Arrays.toString(twoPointers(arr, target)));
+        assertEquals(Arrays.toString(expected), Arrays.toString(onePassMethod(arr, target)));
     }
 
 }
