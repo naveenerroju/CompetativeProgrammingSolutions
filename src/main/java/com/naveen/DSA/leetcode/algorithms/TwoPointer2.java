@@ -1,6 +1,8 @@
 package com.naveen.DSA.leetcode.algorithms;
 
 //problem number 167
+//All the solutions I came up with or found explanations are accepted but couldnt beat atleast 10% of the submissions in run time. The most optimised O(n) solution is using vectors.
+//But currently I'm not learning data structures(Vectors especially) at the moments so I'm leaving it there.
 /*
 Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number.
 Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length.
@@ -58,21 +60,22 @@ public class TwoPointer2 {
 
     public static int[] solution(int[] numbers, int target){
 
-        int[] result = new int[2];
+        int[] result = {-1,-1};
 
         for (int i = 0; i < numbers.length; i++) {
+
             int low = i+1;
             int high = numbers.length-1;
 
             while (low<=high) {
                 int mid = low+(high-low)/2;
                 if (numbers[i] + numbers[mid] < target) {
-                    high=mid-1;
-                } else if(numbers[i]*numbers[mid]>target) {
                     low=mid+1;
+                } else if(numbers[i]+numbers[mid]>target) {
+                    high=mid-1;
                 } else {
-                    result[0]=i;
-                    result[1]=mid;
+                    result[0]=++i;
+                    result[1]=++mid;
                     return result;
                 }
             }
