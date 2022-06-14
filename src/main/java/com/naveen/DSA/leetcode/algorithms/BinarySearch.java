@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.easydifficulty.algorithms;
+package com.naveen.DSA.leetcode.algorithms;
 
 public class BinarySearch {
 

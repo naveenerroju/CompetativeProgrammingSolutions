@@ -1,15 +1,11 @@
-package com.naveen.DSA.leetcode.easydifficulty.algorithms;
-
+package com.naveen.DSA.leetcode.algorithms;
+//Not solved yet! need a faster solution.
 import java.util.Arrays;
 
 public class RotateArray {
 
-
-
-
-
     //37/38 testcases passed. test cased failed due to time limit exceeded.
-    public int[] rotate(int[] nums, int k) {
+    public int[] rotateArray(int[] nums, int k) {
         for(int i=1;i<=k; i++) {
             rotate(nums);
         }

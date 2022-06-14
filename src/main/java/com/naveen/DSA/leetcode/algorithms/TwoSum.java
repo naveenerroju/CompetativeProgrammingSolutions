@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.easydifficulty;
+package com.naveen.DSA.leetcode.algorithms;
 
 import java.util.HashMap;
 
@@ -18,6 +18,7 @@ public class TwoSum {
         }
         return new int[] {-1,-1};
     }
+
 
     private static int[] bruteForce(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {

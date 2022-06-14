@@ -1,5 +1,6 @@
 package com.naveen.DSA.leetcode.easydifficulty.algorithms;
 
+import com.naveen.DSA.leetcode.algorithms.MoveZeros;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

@@ -2,12 +2,9 @@ package com.naveen.DSA.leetcode.easydifficulty.algorithms;
 
 //testcases arent developed
 
+import com.naveen.DSA.leetcode.algorithms.BinarySearch;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class BinarySearchTest extends BinarySearch {
 
