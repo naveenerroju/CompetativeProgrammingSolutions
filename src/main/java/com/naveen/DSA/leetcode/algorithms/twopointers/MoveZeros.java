@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 
 //topic: Two points
 /*

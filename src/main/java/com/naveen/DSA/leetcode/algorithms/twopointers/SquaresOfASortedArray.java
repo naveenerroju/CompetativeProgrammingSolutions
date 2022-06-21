@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 
 //this algorithm has bugs. it is throwing errors in some cases.
 //work on it again in a fresh mind.

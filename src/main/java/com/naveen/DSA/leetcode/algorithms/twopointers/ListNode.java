@@ -1,13 +1,13 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 
 //This is only a supporting data type class for other problems.
 //Ignore it
 
 public class ListNode {
         int node;
-        com.naveen.DSA.leetcode.algorithms.ListNode next;
+        ListNode next;
 
-        void ListNode(int node, com.naveen.DSA.leetcode.algorithms.ListNode next){
+        void ListNode(int node, ListNode next){
             this.node = node;
             this.next = next;
         }

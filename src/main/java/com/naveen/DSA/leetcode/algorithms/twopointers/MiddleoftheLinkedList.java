@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 /*
 The class ListNode wont work properly, It's only for reductio of error.
 This entire code wont work in our System because of the depending clases.

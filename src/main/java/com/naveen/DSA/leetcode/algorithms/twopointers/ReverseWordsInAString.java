@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 //Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
 import java.util.Arrays;

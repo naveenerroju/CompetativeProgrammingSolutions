@@ -1,7 +1,5 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 
-
-import java.util.List;
 
 public class RemoveNthNodeFromEndOfTheList {
 //Leetcode problem 19

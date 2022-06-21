@@ -1,6 +1,6 @@
 package com.naveen.DSA.leetcode.easydifficulty.algorithms;
 
-import com.naveen.DSA.leetcode.algorithms.SquaresOfASortedArray;
+import com.naveen.DSA.leetcode.algorithms.twopointers.SquaresOfASortedArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package com.naveen.DSA.leetcode.algorithms;
+package com.naveen.DSA.leetcode.algorithms.twopointers;
 
 import java.util.HashMap;
 
