@@ -1,7 +1,5 @@
 package com.naveen.utils;
 
-import com.naveen.DSA.leetcode.easydifficulty.problems.ReverseLinkedList;
-
 /**
  * This cannot be imported properly. so copy-paste this class as a subclass
  */
