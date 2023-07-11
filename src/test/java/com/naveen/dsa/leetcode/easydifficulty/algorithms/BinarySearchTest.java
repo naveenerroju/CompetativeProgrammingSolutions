@@ -1,7 +1,5 @@
 package com.naveen.dsa.leetcode.easydifficulty.algorithms;
 
-//testcases arent developed
-
 import com.naveen.dsa.leetcode.algorithms.BinarySearch;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
