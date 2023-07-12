@@ -13,9 +13,7 @@ public class RotateArray {
 
     public static void main(String[] args) {
         int[] num = {1,2,3,4,5,6,7};
-        //int[] expected = {5,6,7,1,2,3,4};
         int rotate = 3;
-        //int[] result = rotateArray2(num, rotate);
         rotateArray3(num, rotate);
         System.out.println(Arrays.toString(num));
     }
