@@ -1,0 +1,11 @@
+
+Y
+java:S1226">Introduce a new variable instead of reusing the parameter "a".(­ÛúÒûÿÿÿÿ
+Z
+java:S2583"DChange this condition so that it does not always evaluate to "false"(Êÿª
+?
+java:S2129"$Remove this "BigInteger" constructor(´ú˜êşÿÿÿÿ
+:
+java:S2129"$Remove this "BigInteger" constructor(šºº¢
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÁÔèµıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‘ÿ¯

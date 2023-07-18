@@ -36,11 +36,8 @@ public class SortingTheSentence {
             String serial = String.valueOf(word.charAt(word.length()-1));
             orderedWords[Integer.parseInt(serial)-1] = word.substring(0, (word.length()-1));
         }
-        System.out.println(Arrays.toString(orderedWords));
 
-        String orderedSentence = Arrays.stream(orderedWords).collect(Collectors.joining(" "));
-
-        return orderedSentence;
+        return String.join(" ", orderedWords);
     }
 
 

@@ -12,25 +12,19 @@ import java.util.List;
 public class RotateArray {
 
     public static void main(String[] args) {
-        int[] num = {1,2,3,4,5,6,7};
-        int rotate = 3;
-        rotateArray3(num, rotate);
-        System.out.println(Arrays.toString(num));
+
     }
 
     /**
      * work in progress
      * @param num
-     * @param k
      */
-    public static void rotateArray3(int[] num, int k) {
-        int leftPointer = k;
-        int rightPointer = num.length-k;
-
-        while(leftPointer < rightPointer && rightPointer<num.length){
-            int temp = num[leftPointer];
-            num[leftPointer++]=num[rightPointer];
-            num[rightPointer++]=temp;
+    public static void rotateArray3(int[] num) {
+        int rotate = 3;
+        for (int i = 0; i < rotate; i++) {
+            int temp = num[0];
+            num[0]=num[num.length - 1];
+            num[num.length - 1]=temp;
         }
     }
 
@@ -55,7 +49,8 @@ public class RotateArray {
             result[counter++]=nums[leftPointer];
             leftPointer++;
         }
-        return result;
+        nums=result;
+        return nums;
     }
 
 

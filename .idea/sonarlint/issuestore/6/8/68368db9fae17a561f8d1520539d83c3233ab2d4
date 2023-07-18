@@ -1,0 +1,15 @@
+
+h
+java:S1104"RMake answer a static final constant or non-public and provide accessors if needed.(öıÑ
+b
+java:S1104"MMake n a static final constant or non-public and provide accessors if needed.(ş‡­
+B
+java:S1444",Make this "public static answer" field final(öıÑ
+<
+java:S1444"'Make this "public static n" field final(ş‡­
+N
+java:S3516S"9Refactor this method to not always return the same value.(üÄŞF
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒç®‡øÿÿÿÿ
+`
+java:S1124d"EReorder the modifiers to comply with the Java Language Specification.(”¼“úÿÿÿÿ
+V	java:S125l"<This block of commented-out lines of code should be removed.(È°ùÕÿÿÿÿÿ
