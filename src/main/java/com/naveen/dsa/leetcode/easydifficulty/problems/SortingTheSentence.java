@@ -11,7 +11,7 @@ public class SortingTheSentence {
 
     public static void main(String[] args) {
 
-        sortTheSentense("this2 is4 me1 writing3");
+        sortTheSentense("me3 This1 writing4 is2");
 
     }
 
