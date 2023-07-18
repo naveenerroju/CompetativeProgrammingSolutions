@@ -1,0 +1,15 @@
+
+q
+java:S1104/"VMake badversion a static final constant or non-public and provide accessors if needed.(æëä´úÿÿÿÿ
+K
+java:S1444/"0Make this "public static badversion" field final(æëä´úÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(‚äÿ€
+3
+java:S2119<"Save and re-use this "Random".(¼ÝÅf
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(•ÓÑüÿÿÿÿ
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(ªÂ…‘
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(­ÜÍ«
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(¨ÝËÎ
+J
+java:S11447"/Remove this unused private "stressTest" method.(¦·Êýÿÿÿÿ

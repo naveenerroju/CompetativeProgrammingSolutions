@@ -1,0 +1,6 @@
+
+N
+java:S1854"8Remove this useless assignment to local variable "grid".(Дђ’К
+?
+java:S1481")Remove this unused "grid" local variable.(Дђ’К
+M	java:S106"9Replace this use of System.out or System.err by a logger.(цйХ

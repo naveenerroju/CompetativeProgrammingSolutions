@@ -1,0 +1,13 @@
+
+7
+java:S1643:"Use a StringBuilder instead.(ê¬‚ªüÿÿÿÿ
+7
+java:S1643<"Use a StringBuilder instead.(è¸±·þÿÿÿÿ
+R
+java:S1854
+"<Remove this useless assignment to local variable "sentence".(íË•²
+C
+java:S1481
+"-Remove this unused "sentence" local variable.(íË•²
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ºÕ§‡ýÿÿÿÿ
+M	java:S106""9Replace this use of System.out or System.err by a logger.(ôô

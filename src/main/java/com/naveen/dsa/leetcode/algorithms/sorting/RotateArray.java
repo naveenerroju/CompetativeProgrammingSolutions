@@ -1,4 +1,4 @@
-package com.naveen.dsa.leetcode.algorithms;
+package com.naveen.dsa.leetcode.algorithms.sorting;
 //Not solved yet! need a faster solution.
 import java.util.Arrays;
 
