@@ -10,8 +10,12 @@ public class SortingTheSentence {
 
 
     public static void main(String[] args) {
+        FinalValueofVariableAfterPerformingOperations finalValueofVariableAfterPerformingOperations = new FinalValueofVariableAfterPerformingOperations();
+        String[] array = {"--X","--X"};
+        int arrayResult = -2;
+        int result = finalValueofVariableAfterPerformingOperations.finalValueAfterOperations(array);
 
-        sortTheSentense("me3 This1 writing4 is2");
+        System.out.println(result==arrayResult ? "test passed" : "test failed");
 
     }
 
