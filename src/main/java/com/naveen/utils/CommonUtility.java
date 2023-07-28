@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  *This class contains basic functionality/util functions
+ * As a good coding practice, it is important to implement only utility functions and make them final static
  *
  * @author Naveen Kumar
  */
@@ -14,13 +15,12 @@ public class CommonUtility {
      * @param list
      * @return
      */
-    public static final String arrayListToString(List<String> list) {
+    public final String arrayListToString(List<String> list) {
         StringBuffer buffer = new StringBuffer();
         for (String s : list) {
             buffer.append(s);
             buffer.append(", ");
         }
-        buffer.substring(0, buffer.length() - 2);
-        return buffer.toString();
+        return buffer.substring(0, buffer.length() - 2);
     }
 }
