@@ -26,7 +26,19 @@ class CommonUtilityTest {
         list.add(new String("hello  world"));
         String result = utility.arrayListToString(list);
 
-        String expected = "hello  world, hello  world, hello  world";
+        String expected = "hello  world,hello  world,hello  world";
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void arrayListOfIntToString() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        String result = utility.arrayListOfIntToString(list);
+
+        String expected = "1,2,3";
         Assertions.assertEquals(expected, result);
     }
 }

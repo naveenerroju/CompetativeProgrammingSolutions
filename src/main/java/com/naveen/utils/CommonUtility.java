@@ -19,8 +19,22 @@ public class CommonUtility {
         StringBuffer buffer = new StringBuffer();
         for (String s : list) {
             buffer.append(s);
-            buffer.append(", ");
+            buffer.append(",");
         }
-        return buffer.substring(0, buffer.length() - 2);
+        return buffer.substring(0, buffer.length() - 1);
+    }
+
+    /**
+     * This method is used to get a String representation of a list of integers
+     * @param list
+     * @return
+     */
+    public final String arrayListOfIntToString(List<Integer> list) {
+        StringBuffer buffer = new StringBuffer();
+        for (int s : list) {
+            buffer.append(s);
+            buffer.append(",");
+        }
+        return buffer.substring(0, buffer.length() - 1);
     }
 }
