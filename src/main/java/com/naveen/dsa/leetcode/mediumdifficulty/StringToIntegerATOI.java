@@ -9,45 +9,35 @@ import java.math.BigInteger;
  */
 public class StringToIntegerATOI {
 
-    public static void main(String[] args) {
-        System.out.println(toInteger("-123 wirds 23"));
-        System.out.println(toInteger("43"));
-        System.out.println(toInteger("-+43"));
-        System.out.println(toInteger("words -123 wirds 23"));
-        System.out.println(toInteger("-91283472332")); // expected: -2147483648
-    }
-
     /**
-     * @param value
+     * @description This is more efficient than using BigInteger. (solution is copied)
+     * @param s
      * @return
-     * @description My solution
      */
-    public static int toInteger(String value) {
-        value = value.trim();
-        StringBuilder sb = new StringBuilder();
-        char[] chars = value.toCharArray();
+    public int optimisedATOI(String s) {
+        s = s.strip();
+        if (s.isEmpty())
+            return 0;
 
-        for (int i = 0; i < chars.length; i++) {
-            char c = chars[i];
-            if (Character.isDigit(c) || (i == 0 && (c == '-' || c == '+'))) {
-                sb.append(c);
-            } else if (sb.isEmpty()) {
-                return 0;
-            } else {
+        final int sign = s.charAt(0) == '-' ? -1 : 1;
+        if (s.charAt(0) == '+' || s.charAt(0) == '-')
+            s = s.substring(1);
+
+        long num = 0;
+
+        for (final char c : s.toCharArray()) {
+            if (!Character.isDigit(c))
                 break;
-            }
+            num = num * 10 + (c - '0');
+            if (sign * num <= Integer.MIN_VALUE)
+                return Integer.MIN_VALUE;
+            if (sign * num >= Integer.MAX_VALUE)
+                return Integer.MAX_VALUE;
         }
 
-        BigInteger answer = new BigInteger(sb.toString());
-
-        if (answer.compareTo(BigInteger.valueOf(Integer.MAX_VALUE)) > 0) {
-            return Integer.MAX_VALUE;
-        } else if (answer.compareTo(BigInteger.valueOf(Integer.MIN_VALUE)) < 0) {
-            return Integer.MIN_VALUE;
-        } else {
-            return answer.intValue();
-        }
+        return sign * (int) num;
     }
+
 
     /**
      * @param s
