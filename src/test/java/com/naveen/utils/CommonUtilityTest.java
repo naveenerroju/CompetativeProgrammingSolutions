@@ -15,16 +15,13 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 class CommonUtilityTest {
 
-    @InjectMocks
-    private CommonUtility utility;
-
     @Test
     void arrayListToString() {
         List<String> list = new ArrayList<String>();
         list.add(new String("hello  world"));
         list.add(new String("hello  world"));
         list.add(new String("hello  world"));
-        String result = utility.arrayListToString(list);
+        String result = CommonUtility.arrayListToString(list);
 
         String expected = "hello  world,hello  world,hello  world";
         Assertions.assertEquals(expected, result);
@@ -36,7 +33,7 @@ class CommonUtilityTest {
         list.add(1);
         list.add(2);
         list.add(3);
-        String result = utility.arrayListOfIntToString(list);
+        String result = CommonUtility.arrayListOfIntToString(list);
 
         String expected = "1,2,3";
         Assertions.assertEquals(expected, result);

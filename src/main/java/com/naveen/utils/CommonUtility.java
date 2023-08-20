@@ -15,7 +15,7 @@ public class CommonUtility {
      * @param list
      * @return
      */
-    public final String arrayListToString(List<String> list) {
+    public static final String arrayListToString(List<String> list) {
         StringBuffer buffer = new StringBuffer();
         for (String s : list) {
             buffer.append(s);
@@ -29,7 +29,7 @@ public class CommonUtility {
      * @param list
      * @return
      */
-    public final String arrayListOfIntToString(List<Integer> list) {
+    public static final String arrayListOfIntToString(List<Integer> list) {
         StringBuffer buffer = new StringBuffer();
         for (int s : list) {
             buffer.append(s);
