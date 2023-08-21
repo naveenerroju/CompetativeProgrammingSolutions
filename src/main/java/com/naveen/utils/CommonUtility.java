@@ -67,4 +67,21 @@ public class CommonUtility {
 
         return sb.substring(0, sb.length() - 1) + "]";
     }
+
+    /**
+     * This method provides the GCD of two given integers
+     *
+     * @param num1
+     * @param num2
+     * @return
+     */
+    public static int findGreatestCommonDivisors(int num1, int num2) {
+
+        int min = Integer.min(num1, num2);
+        while (num1 % min != 0 || num2 % min != 0) {
+            min--;
+        }
+
+        return min;
+    }
 }

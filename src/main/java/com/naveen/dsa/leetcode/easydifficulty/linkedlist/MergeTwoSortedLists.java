@@ -1,4 +1,4 @@
-package com.naveen.dsa.leetcode.easydifficulty.problems;
+package com.naveen.dsa.leetcode.easydifficulty.linkedlist;
 
 import com.naveen.utils.ListNode;
 
