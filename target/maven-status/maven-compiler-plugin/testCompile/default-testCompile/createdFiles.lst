@@ -3,11 +3,11 @@ com\naveen\dsa\SmallestLetterGreaterThanTargetTest.class
 com\naveen\dsa\InsertPositionTest.class
 com\naveen\dsa\leetcode\algorithms\TwoPointer2Test.class
 com\naveen\dsa\leetcode\PreciseSquareRootTest.class
+com\naveen\utils\CommonUtilityTest.class
 com\naveen\dsa\leetcode\easydifficulty\algorithms\BinarySearchTest.class
 com\naveen\dsa\leetcode\easydifficulty\algorithms\SquaresOfASortedArrayTest.class
 com\naveen\dsa\leetcode\TwoSumNonSortedArrayTest.class
 com\naveen\dsa\FindDistanceValueBtwnTwoArraysTest.class
 com\naveen\dsa\MountainArrayTest.class
 com\naveen\dsa\leetcode\easydifficulty\algorithms\MoveZerosTest.class
-com\naveen\dsa\leetcode\easydifficulty\problems\ReverseLinkedListTest.class
 com\naveen\dsa\GuessNumberTest.class
