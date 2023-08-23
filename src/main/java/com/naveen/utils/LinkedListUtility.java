@@ -1,9 +1,26 @@
 package com.naveen.utils;
 
+import java.util.Random;
+
 /**
  * @author <a href="mailto:naveenkumarerroju@gmail.com">Naveen Kumarer</a>
  */
 public class LinkedListUtility {
+
+    private static final Random random = new Random();
+
+    public static ListNode getRandomList(int size) {
+
+        ListNode list = new ListNode(random.nextInt(9));
+        ListNode head = list;
+
+        for (int i = 0; i < size; i++) {
+            list.next = new ListNode(random.nextInt(9));
+            list = list.next;
+        }
+
+        return head;
+    }
 
 
     /**
