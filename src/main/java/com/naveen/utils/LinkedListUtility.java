@@ -53,4 +53,22 @@ public class LinkedListUtility {
         return sb.substring(0, sb.length() - 1) + "]";
     }
 
+    /**
+     * This method converts an array of any size to LinkedList.
+     * Tip: Use this to create quick LinkedLists.
+     *
+     * @param array array of any size
+     * @return the same array in LinkedList
+     */
+    public static ListNode convertArrayToList(int[] array) {
+        ListNode start = new ListNode();
+        ListNode head = start;
+        for (int j : array) {
+            ListNode temp = new ListNode(j);
+            start.next = temp;
+            start = start.next;
+        }
+        return head.next;
+    }
+
 }
