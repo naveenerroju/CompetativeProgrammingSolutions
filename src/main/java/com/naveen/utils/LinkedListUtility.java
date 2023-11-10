@@ -42,11 +42,11 @@ public class LinkedListUtility {
      * @return
      */
     public static final String linkedListToString(ListNode node) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("[");
 
         while (node != null) {
-            sb.append(node.val + ",");
+            sb.append(node.val).append(",");
             node = node.next;
         }
 
@@ -64,8 +64,7 @@ public class LinkedListUtility {
         ListNode start = new ListNode();
         ListNode head = start;
         for (int j : array) {
-            ListNode temp = new ListNode(j);
-            start.next = temp;
+            start.next = new ListNode(j);
             start = start.next;
         }
         return head.next;
