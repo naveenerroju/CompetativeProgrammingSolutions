@@ -59,6 +59,18 @@ public class ArraysUtility {
 
     }
 
+    public static void reverseSubString(int[] nums, int start, int end){
+
+        while(start<end){
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+
+    }
+
     public static int[] getArray(){
         return new int[]{1,4,2,6,8,323,68,231234,764,123253};
     }

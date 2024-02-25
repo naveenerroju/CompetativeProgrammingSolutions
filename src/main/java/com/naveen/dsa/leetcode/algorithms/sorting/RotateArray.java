@@ -1,8 +1,38 @@
 package com.naveen.dsa.leetcode.algorithms.sorting;
 //Not solved yet! need a faster solution.
+import com.naveen.utils.ArraysUtility;
+
 import java.util.Arrays;
 
 public class RotateArray {
+
+    /**
+     * Beats 35.27% of users with Java  in Runtime
+     * Beats 64.28% of users with Java
+     * @param nums
+     * @param k
+     */
+    public static void rotate(int[] nums, int k) {
+
+        if(nums.length<2){
+            return;
+        }
+
+        k = k % nums.length;
+        if(k < 0){
+            k += nums.length;
+        }
+
+        //reverse entire array
+        ArraysUtility.reverseSubString(nums, 0, nums.length-1);
+
+        //reverse 0 to nums.length-k
+        ArraysUtility.reverseSubString(nums, 0, k-1);
+
+        //reverse nums.length-k to nums.length
+        ArraysUtility.reverseSubString(nums, k, nums.length-1);
+
+    }
 
     //37/38 testcases passed. test cased failed due to time limit exceeded.
     public int[] rotateArray(int[] nums, int k) {

@@ -30,7 +30,7 @@ public class LinkedListUtility {
      */
     public static final void printLinkedLists(ListNode node) {
         while (node != null) {
-            System.out.println(node.val);
+            System.out.print(node.val+",");
             node = node.next;
         }
     }
@@ -68,6 +68,19 @@ public class LinkedListUtility {
             start = start.next;
         }
         return head.next;
+    }
+
+    public static ListNode reverseLinkedList(ListNode head) {
+        ListNode reverse = new ListNode();
+        ListNode reverseHead = reverse;
+        while (head != null) {
+            ListNode temp = head;
+            temp.next = reverse;
+            reverse=temp;
+            head = head.next;
+            System.out.println(temp.val);
+        }
+        return reverseHead.next;
     }
 
 }
